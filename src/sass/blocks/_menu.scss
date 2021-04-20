@@ -1,0 +1,29 @@
+.hamburger {
+    position:absolute;
+    top: 20px;
+    right: 30px;
+    width: 52px;
+    height: 52px;
+    border-radius: 100%;
+    background: rgba(255, 165, 1, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &__wrapper {
+        height: 21px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: #151812;
+    }
+    span.long {
+        width: 36px;
+    }
+}
