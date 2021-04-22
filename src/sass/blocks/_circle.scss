@@ -1,0 +1,13 @@
+.circle_left {
+    position: relative;
+    @include before_circle_left;
+    padding-left: 10px;
+    z-index: 2;
+}
+
+.circle_left_top {
+    position: relative;
+    @include before_circle_left_top;
+    padding-left: 15px;
+    z-index: 2;
+}

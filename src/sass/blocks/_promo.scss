@@ -6,12 +6,6 @@
     &__title {
         margin-top: 10px;
     }
-    &__subtitle {
-        position: relative;
-        @include before_circle;
-        padding-left: 10px;
-        z-index: 2;
-    }
     &__btns {
         margin-top: 25px;
         display: flex;

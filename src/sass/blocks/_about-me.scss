@@ -1,0 +1,51 @@
+.about-me {
+    padding: 120px 0;
+    &__wrapper {
+        display: grid;
+        grid-template: repeat(2, 250px)/400px 670px;
+        gap: 40px 70px;
+        grid-template-areas:
+            "img descr"
+            "img skills";
+    }
+    &__img {
+        grid-area: img;
+        width: 400px;
+        height: 600px;
+    }
+    &__descr {
+        grid-area: descr;
+    }
+    &__skills {
+        grid-area: skills;
+        display: grid;
+        grid-template: repeat(2, 116px)/repeat(2, 260px);
+        gap: 20px 50px;
+        &__item {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__text {
+            width: 200px;
+            margin-top: 6px;
+            font-weight: 500;
+            font-size: 14px;
+            color: #000000;
+            &_grey {
+                color: #DBC9C9;
+            }
+        }
+    }
+    &__divider {
+        width: 60px;
+        height: 3px;
+        background-color: $main-color;
+        margin-bottom: 20px;
+    }
+    &__text {
+        width: 381px;
+        font-weight: 500;
+        font-size: 18px;
+        color: #000000;
+    }
+}
