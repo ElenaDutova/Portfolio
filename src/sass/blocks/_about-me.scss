@@ -1,20 +1,28 @@
 .about-me {
-    padding: 120px 0;
+    padding-top: 120px;
     &__wrapper {
         display: grid;
-        grid-template: repeat(2, 250px)/400px 670px;
+        grid-template: repeat(2, minmax(250px, auto))/400px 670px;
         gap: 40px 70px;
+        grid-auto-rows: minmax(250px, auto);
         grid-template-areas:
-            "img descr"
-            "img skills";
+            "photo descr"
+            "photo skills";
     }
-    &__img {
-        grid-area: img;
+    &__photo {
+        grid-area: photo;
         width: 400px;
         height: 600px;
     }
     &__descr {
         grid-area: descr;
+    }
+    &__text {
+        margin-top: 20px;
+        width: 530px;
+        font-weight: 500;
+        font-size: 18px;
+        color: #000000;
     }
     &__skills {
         grid-area: skills;
@@ -35,17 +43,5 @@
                 color: #DBC9C9;
             }
         }
-    }
-    &__divider {
-        width: 60px;
-        height: 3px;
-        background-color: $main-color;
-        margin-bottom: 20px;
-    }
-    &__text {
-        width: 381px;
-        font-weight: 500;
-        font-size: 18px;
-        color: #000000;
     }
 }
