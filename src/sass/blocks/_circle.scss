@@ -8,6 +8,6 @@
 .circle_left_top {
     position: relative;
     @include before_circle_left_top;
-    padding-left: 15px;
+    padding: 15px 0 0 15px;
     z-index: 2;
 }

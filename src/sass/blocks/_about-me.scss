@@ -13,6 +13,9 @@
         grid-area: photo;
         width: 400px;
         height: 600px;
+        img {
+            width: 100%;
+        }
     }
     &__descr {
         grid-area: descr;
@@ -27,13 +30,15 @@
     &__skills {
         grid-area: skills;
         display: grid;
-        grid-template: repeat(2, 116px)/repeat(2, 260px);
+        grid-template: repeat(2, minmax(115px, auto))/repeat(2, 260px);
+        grid-auto-rows: 1fr;
         gap: 20px 50px;
-        &__item {
-            display: flex;
-            justify-content: space-between;
+        &-item {
+            display: grid;
+            grid-template-columns: 40px 200px;
+            column-gap: 20px;
         }
-        &__text {
+        &-text {
             width: 200px;
             margin-top: 6px;
             font-weight: 500;
