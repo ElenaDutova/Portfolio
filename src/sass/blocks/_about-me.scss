@@ -19,6 +19,9 @@
     }
     &__descr {
         grid-area: descr;
+        &-title {
+            margin-top: 6px;
+        }
     }
     &__text {
         margin-top: 20px;
