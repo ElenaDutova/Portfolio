@@ -22,4 +22,41 @@
         line-height: 18px;
         color: #000000;
     }
+    &__rating {
+        padding-top: 120px;
+        display: grid;
+        grid-template: repeat(2, minmax(70px, auto)) / repeat(3, 350px);
+        grid-auto-rows: 1fr;
+        gap: 30px 45px;
+        &-item {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-title {
+            margin-top: 8px;
+            &::before {
+                top: -33%;
+            }
+        }
+        &-percent {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+            margin-top: 8px;
+        }
+        &-line {
+            margin-top: 20px;
+            width: 350px;
+            height: 14px;
+            background: #E8E4DE;
+            border-radius: 4px;
+        }
+        &-full {
+            width: 300px;
+            height: 14px;
+            background: $main-color;
+            border-radius: 4px;
+        }
+    }
 }

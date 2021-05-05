@@ -3,6 +3,9 @@
     @include before_circle_left;
     padding-left: 10px;
     z-index: 2;
+    &_pl13 {
+        padding-left: 13px;
+    }
 }
 
 .circle_left_top {
