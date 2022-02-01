@@ -2,15 +2,10 @@
     padding-top: 120px;
     &__wrapper {
         display: grid;
-        grid-template: repeat(2, minmax(250px, auto))/400px 670px;
-        gap: 40px 70px;
-        grid-auto-rows: minmax(250px, auto);
-        grid-template-areas:
-            "photo descr"
-            "photo descr";
+        grid-template-columns: 400px 670px;
+        column-gap: 70px;
     }
     &__photo {
-        grid-area: photo;
         width: 400px;
         height: 600px;
         img {
@@ -18,9 +13,13 @@
         }
     }
     &__descr {
-        grid-area: descr;
         &-title {
             margin-top: 6px;
+        }
+        form {
+            display: grid;
+            grid-template-columns: repeat(2, 280px);
+            column-gap: 25px;
         }
     }
     &__text {
@@ -28,5 +27,11 @@
         font-weight: 500;
         font-size: 18px;
         color: #000000;
+    }
+    &__links {
+        margin-top: 20px;
+        width: 140px;
+        display: flex;
+        justify-content: space-between;
     }
 }

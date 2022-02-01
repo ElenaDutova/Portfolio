@@ -1,4 +1,4 @@
-// Создаем переменные, через которые будет что-то просиходить:
+// Создаем переменные, через которые будет что-то происходить:
 
 const hamburger = document.querySelector('.hamburger'),
 	    menu = document.querySelector('.menu'),
@@ -25,4 +25,11 @@ window.addEventListener("keydown", (e) => {
     if (e.key == 'Escape') {
                 menu.classList.remove('active');
     }
+});
+
+const percents = document.querySelectorAll('.skill__rating-percent'),
+        lines = document.querySelectorAll('.skill__rating-full');
+
+percents.forEach( (item, i) => {
+    lines[i].style.width = item.innerHTML;
 });
