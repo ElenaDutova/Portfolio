@@ -462,8 +462,8 @@
                     <h2 class="title title_fz16 circle_left contacts__descr-title">Контакты</h2>
                     <div class="title title_fz36 title_mt">Свяжитесь со мной</div>
                     <div class="divider"></div>
-                    <div class="contacts__text">Любым удобным для вас способом:</div>
-                    <div class="contacts__links">
+                    <div class="title title_fz14 contacts__text">Любым удобным для вас способом:</div>
+                    <div class="contacts__social">
                         <a href="#" class="contacts__link">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M25.6055 0L4.39453 0C1.97159 0 0 1.97159 0 4.39453L0 25.6055C0 28.0284 1.97159 30 4.39453 30L13.2422 30L13.2422 19.3945L9.72656 19.3945L9.72656 14.1211H13.2422V10.5469C13.2422 7.63893 15.6077 5.27344 18.5156 5.27344L23.8477 5.27344V10.5469H18.5156L18.5156 14.1211H23.8477L22.9687 19.3945H18.5156V30H25.6055C28.0284 30 30 28.0284 30 25.6055L30 4.39453C30 1.97159 28.0284 0 25.6055 0Z" fill="black"/>
@@ -480,22 +480,30 @@
                                 <path d="M7.5 15C7.5 19.1419 10.8581 22.5 15 22.5C19.1419 22.5 22.5 19.1419 22.5 15C22.5 10.8581 19.1419 7.5 15 7.5C10.8581 7.5 7.5 10.8581 7.5 15ZM19.6875 15C19.6875 17.5837 17.5837 19.6875 15 19.6875C12.4144 19.6875 10.3125 17.5838 10.3125 15C10.3125 12.4163 12.4144 10.3125 15 10.3125C17.5837 10.3125 19.6875 12.4162 19.6875 15Z" fill="black"/>
                                 <path d="M7.93685 6.93715C7.93685 6.38521 7.48942 5.93777 6.93748 5.93777C6.38554 5.93777 5.93811 6.38521 5.93811 6.93715C5.93811 7.48909 6.38554 7.93652 6.93748 7.93652C7.48942 7.93652 7.93685 7.48909 7.93685 6.93715Z" fill="black"/>
                             </svg>
-                                
                         </a>
                     </div>
-                    <div class="contacts__text">Или оставьте ваши данные и я сама вам напишу:</div>
-                    <form action="">
-                        <input type="text" name="Name" placeholder="Ваше имя" required>
-                        <input type="text" name="E-mail" placeholder="Ваша почта" required>
-                        <input type="text" name="message" placeholder="Ваше сообщение" required>
-                        <input type="button" placeholder="Отправить сообщение">
+                    <div class="title title_fz14 contacts__text">Или оставьте ваши данные и я сама вам напишу:</div>
+                    <form action="#" class="contacts__form">
+                        <div class="contacts__input">
+                            <input id="name" type="text" name="name" required>
+                            <label for="name">Ваше имя</label>
+                        </div>
+                        <div class="contacts__input">
+                            <input id="email" type="email" name="email" required>
+                            <label for="name">Ваша почта</label>
+                        </div>
+                        <div class="contacts__textarea">
+                            <textarea name="text" id="text"></textarea>
+                            <label for="text">Ваше сообщение</label>
+                        </div>
+                        <div class="contacts__triggers">
+                            <button class="btn contacts__btn">Отправить сообщение</button>
+                            <div class="contacts__policy">
+                                <input type="checkbox" name="checkbox" id="checkbox" required>
+                                <span>Я согласен(а) с <a href="#">политикой конфиденциальности</a></span>
+                            </div>
+                        </div>
                     </form>
-                    <!-- <div class="contacts__form">
-                        <input type="text" name="name">
-                        <input type="text" name="e-mail">
-                        <input type="text" name="message">
-                        <a href="#" class="contacts__link btn">Отправить сообщение</a>
-                    </div> -->
                 </div>
             </div>
         </div>
