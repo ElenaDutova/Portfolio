@@ -127,11 +127,15 @@
         </div>
     </section>
 
-    <section class="about-me">
+<!--     <section class="about-me">
         <div class="container">
             <div class="about-me__wrapper">
                 <div class="about-me__photo">
-                    <img src="img/photo1.jpg" alt="photo">
+                    <img    srcset="img/photo1-min.jpg 540w,
+                            img/photo1.jpg 350w"
+                            sizes="(max-width: 768px) 530px,
+                                    (min-width: 769px) 340px"
+                            src="img/photo1.jpg" alt="photo">
                 </div>
                 <div class="about-me__descr">
                     <h2 class="title title_fz16 circle_left about-me__descr-title">Про меня</h2>
@@ -179,12 +183,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 <!--     <section class="resume">
         <div class="container">
             <h2 class="title title_fz16 title_center circle_center">Опыт</h2>
-            <div class="title title_center">Чем я буду полезна</div>
+            <div class="title title_fz36 title_center">Чем я буду полезна</div>
             <div class="divider divider_center_mt"></div>
 
             <div class="resume__wrapper">
@@ -271,7 +275,7 @@
 <!--     <section class="skill">
         <div class="container">
             <h2 class="title title_fz16 title_center circle_center">Навыки</h2>
-            <div class="title title_center">Что я использую в работе</div>
+            <div class="title title_fz36 title_center">Что я использую в работе</div>
             <div class="divider divider_center_mt"></div>
             <div class="skill__wrapper">
                 <div class="skill__item">
@@ -387,7 +391,7 @@
 <!--     <section class="works">
         <div class="container">
             <h2 class="title title_fz16 title_center circle_center">Портфолио</h2>
-            <div class="title title_center">Мои работы</div>
+            <div class="title title_fz36 title_center">Мои работы</div>
             <div class="divider divider_center_mt"></div>
             <div class="works__wrapper">
                 <a href="https://elenadutova.github.io/" class="works__item">
@@ -400,13 +404,21 @@
                     <img src="img/works/bread.jpg" alt="bread">
                 </a>
                 <a href="#" class="works__item plans">
-                    <img src="img/works/plans.jpg" alt="plans">
+                    <img   srcset="img/works/plans-min.jpg 280w,
+                                    img/works/plans.jpg 350w"
+                            sizes="(max-width: 576px) 270px,
+                                    (min-width: 577px) 340px" 
+                        src="img/works/plans.jpg" alt="plans">
                 </a>
                 <a href="#" class="works__item">
                     <img src="img/works/ipad.jpg" alt="ipad">
                 </a>
                 <a href="#" class="works__item mac">
-                    <img src="img/works/mac.jpg" alt="mac">
+                    <img srcset="img/works/mac-min.jpg 280w,
+                                img/works/mac.jpg 565w"
+                        sizes="(max-width: 576px) 270px,
+                                (min-width: 577px) 560px"
+                        src="img/works/mac.jpg" alt="mac">
                 </a>
             </div>
         </div>
@@ -452,7 +464,7 @@
         </div>
     </section> -->
 
-<!--     <section class="contacts">
+    <section class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
@@ -508,7 +520,7 @@
             </div>
         </div>
     </section>
- -->
+
     <script src="js/script.js"></script>
 </body>
 </html>
